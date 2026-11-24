@@ -99,7 +99,7 @@
         @media print {
             @page {
                 size: letter portrait;
-                margin: 0.42in 0.48in;
+                margin: 0.36in 0.45in;
             }
 
             *, *::before, *::after {
@@ -116,8 +116,8 @@
                 padding: 0 !important;
                 margin: 0 !important;
                 font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
-                font-size: 9.2pt !important;
-                line-height: 1.35 !important;
+                font-size: 8.8pt !important;
+                line-height: 1.3 !important;
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
             }
@@ -185,7 +185,7 @@
             }
 
             .resume-section {
-                margin-bottom: 9px;
+                margin-bottom: 7px;
             }
 
             .resume-section:last-child {
@@ -221,7 +221,7 @@
             }
 
             .resume-job {
-                margin-bottom: 7px;
+                margin-bottom: 5.5px;
                 page-break-inside: avoid;
                 break-inside: avoid;
             }
@@ -395,16 +395,13 @@
                     </div>
 
                     <!-- Summary Paragraph -->
-                    <div class="text-slate-300 text-base sm:text-lg leading-relaxed mb-8 border-l-2 border-amber-500/70 pl-4">
-                    </p>
-                        Highly experienced Industrial Electrician with over 10 years of hands-on experience in installation, maintenance, troubleshooting, and repair of industrial and commercial electrical systems. Proven ability to interpret electrical schematics, design motor control circuits, calibrate instrumentation, and implement preventive maintenance programs that reduce downtime and improve system reliability.
-                    </p>
-                    </p>
-                        <br><br>
-                    </p>
-                    <p/>
-                        Recently expanded into AI-assisted web application development, building interactive browser-based simulators—including a PLC-5000 industrial ladder logic simulator and a motor control circuit simulator—that translate field electrical and control troubleshooting expertise into practical training tools.
-                    </p>
+                    <div class="text-slate-300 text-base sm:text-lg leading-relaxed mb-8 border-l-2 border-amber-500/70 pl-4 space-y-4">
+                        <p>
+                            Highly experienced Industrial Electrician with over 10 years of hands-on experience in installation, maintenance, troubleshooting, and repair of industrial and commercial electrical systems. Proven ability to interpret electrical schematics, design motor control circuits, calibrate instrumentation, and implement preventive maintenance programs that reduce downtime and improve system reliability.
+                        </p>
+                        <p>
+                            Recently expanded into AI-assisted web application development, building interactive browser-based simulators—including a PLC-5000 industrial ladder logic simulator and a motor control circuit simulator—that translate field electrical and control troubleshooting expertise into practical training tools.
+                        </p>
                     </div>
 
                     <!-- Action Buttons & Social Links -->
@@ -573,7 +570,7 @@
                 <!-- Interactive Filter Tabs -->
                 <div class="flex flex-wrap gap-2" role="tablist" aria-label="Skill Categories">
                     <button onclick="filterSkills('all')" data-filter="all" class="skill-tab active touch-target px-4 py-2.5 rounded-xl text-xs font-mono font-semibold bg-amber-500 text-slate-950 active:scale-[0.98] transition-all cursor-pointer">
-                        ALL (12)
+                        ALL (15)
                     </button>
                     <button onclick="filterSkills('power')" data-filter="power" class="skill-tab touch-target px-4 py-2.5 rounded-xl text-xs font-mono font-semibold bg-slate-900 text-slate-300 border border-slate-800 hover:border-amber-500/50 active:scale-[0.98] transition-all cursor-pointer">
                         INDUSTRIAL & POWER
@@ -647,6 +644,18 @@
                         <div class="p-3 rounded-xl bg-slate-950/90 border border-slate-800/80 flex items-start gap-2.5">
                             <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
                             <span class="text-sm text-slate-200">Fire Detection & Alarm System (FDAS) Installation & Troubleshooting</span>
+                        </div>
+                        <div class="p-3 rounded-xl bg-slate-950/90 border border-slate-800/80 flex items-start gap-2.5">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
+                            <span class="text-sm text-slate-200">PLC Ladder Logic Programming & Troubleshooting</span>
+                        </div>
+                        <div class="p-3 rounded-xl bg-slate-950/90 border border-slate-800/80 flex items-start gap-2.5">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
+                            <span class="text-sm text-slate-200">Variable Frequency Drive (VFD) Programming & Commissioning</span>
+                        </div>
+                        <div class="p-3 rounded-xl bg-slate-950/90 border border-slate-800/80 flex items-start gap-2.5">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
+                            <span class="text-sm text-slate-200">SCADA System Monitoring, Diagnostics & Control</span>
                         </div>
                     </div>
                 </div>
@@ -1034,29 +1043,43 @@
         <!-- Summary -->
         <section class="resume-section">
             <h2 class="resume-section-heading">Summary</h2>
-            <p style="margin: 0; font-size: 8.8pt; color: #1e293b;">
-                Highly experienced Industrial Electrician with over 10 years of hands-on experience in installation, maintenance, troubleshooting, and repair of industrial and commercial electrical systems. Proven ability to interpret electrical schematics, design motor control circuits, and implement preventive maintenance programs that significantly reduce downtime and improve system reliability.
+            <p style="margin: 0 0 4px 0; font-size: 8.7pt; color: #1e293b;">
+                Highly experienced Industrial Electrician with over 10 years of hands-on experience in installation, maintenance, troubleshooting, and repair of industrial and commercial electrical systems. Proven ability to interpret electrical schematics, design motor control circuits, calibrate instrumentation, and implement preventive maintenance programs that reduce downtime and improve system reliability.
+            </p>
+            <p style="margin: 0; font-size: 8.7pt; color: #1e293b;">
+                Recently expanded into AI-assisted web application development, building interactive browser-based simulators—including a PLC-5000 industrial ladder logic simulator and a motor control circuit simulator—that translate field electrical and control troubleshooting expertise into practical training tools.
             </p>
         </section>
 
         <!-- Skills -->
         <section class="resume-section">
-            <h2 class="resume-section-heading">Skills</h2>
+            <h2 class="resume-section-heading">Core Technical Skills</h2>
             <ul class="resume-skills-grid">
-                <li>Fire Detection and Alarm System (FDAS) Installation and Troubleshooting</li>
-                <li>Electrical Installation and Maintenance</li>
-                <li>Motor Control Circuit Design and Troubleshooting</li>
-                <li>Industrial Instrumentation Installation and Calibration</li>
-                <li>Preventive Maintenance Planning</li>
-                <li>Electrical Blueprint and Schematic Reading</li>
-                <li>Transformer, Panel Board, and Circuit Breaker Installation</li>
+                <li>PLC Ladder Logic Programming & Troubleshooting</li>
+                <li>Variable Frequency Drive (VFD) Programming & Commissioning</li>
+                <li>SCADA System Monitoring, Diagnostics & Control</li>
+                <li>Motor Control Circuit Design & Troubleshooting</li>
+                <li>Industrial Instrumentation Installation & Calibration</li>
+                <li>Electrical Blueprint & Schematic Reading</li>
+                <li>Transformer, Panel Board & Circuit Breaker Installation</li>
                 <li>Overhead Crane Electrical Maintenance</li>
                 <li>Industrial Machine Motor Repair</li>
+                <li>Cable Pulling & Wiring Installation</li>
+                <li>Fire Detection & Alarm System (FDAS) Installation & Troubleshooting</li>
+                <li>Preventive Maintenance Planning</li>
                 <li>PABX System Troubleshooting</li>
-                <li>Cable Pulling and Wiring Installation</li>
                 <li>Computer Systems Servicing</li>
                 <li>AI-Assisted Software Development</li>
                 <li>Good Communication Skills</li>
+            </ul>
+        </section>
+
+        <!-- Featured Web Application Projects -->
+        <section class="resume-section">
+            <h2 class="resume-section-heading">Featured Web Application Projects (AI-Assisted Development)</h2>
+            <ul class="resume-bullets">
+                <li><strong>PLC-5000 Industrial Ladder Logic Motor Control Simulator</strong> (<span style="color:#334155;">jeffry-lacanglacang.github.io/PLC-5000-Industrial-Ladder-Logic-Motor-Control-Simulator/</span>) — Interactive ladder logic programming and motor control simulation tool featuring live rung execution, virtual I/O, timers, counters, and industrial motor starter logic.</li>
+                <li><strong>Motor Control Simulator</strong> (<span style="color:#334155;">jeffry-lacanglacang.github.io/Motor-Control-Simulator/</span>) — Browser-based industrial motor control circuit simulator modeling magnetic contactors, overload relays, start/stop stations, forward-reverse, and wye-delta motor control wiring and fault troubleshooting.</li>
             </ul>
         </section>
 
@@ -1323,4 +1346,4 @@
         });
     </script>
 </body>
-</html>
+        </html>

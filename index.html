@@ -89,6 +89,9 @@
         .cyan-glow:hover {
             box-shadow: 0 0 25px -5px rgba(6, 182, 212, 0.35);
         }
+        .emerald-glow:hover {
+            box-shadow: 0 0 25px -5px rgba(16, 185, 129, 0.35);
+        }
 
         /* Hide formal print-only resume during normal web browsing */
         #printable-resume {
@@ -400,7 +403,7 @@
                             Highly experienced Industrial Electrician with over 10 years of hands-on experience in installation, maintenance, troubleshooting, and repair of industrial and commercial electrical systems. Proven ability to interpret electrical schematics, design motor control circuits, calibrate instrumentation, and implement preventive maintenance programs that reduce downtime and improve system reliability.
                         </p>
                         <p>
-                            Recently expanded into AI-assisted web application development, building interactive browser-based simulators—including a PLC-5000 industrial ladder logic simulator and a motor control circuit simulator—that translate field electrical and control troubleshooting expertise into practical training tools.
+                            Recently expanded into AI-assisted web application development, building interactive browser-based simulators and supervisory runtimes—including VANGUARD SCADA Industrial Supervisory Runtime, a PLC-5000 industrial ladder logic simulator, and a motor control circuit simulator—that translate field electrical, telemetry, and control troubleshooting expertise into practical training tools.
                         </p>
                     </div>
 
@@ -437,16 +440,68 @@
                 <div>
                     <div class="flex items-center gap-2 text-cyan-400 font-mono text-xs uppercase tracking-widest mb-2">
                         <i data-lucide="sparkles" class="w-4 h-4"></i>
-                        <span>Web Simulators // AI Assisted Development</span>
+                        <span>Web Simulators & SCADA // AI Assisted Development</span>
                     </div>
                     <h2 class="fluid-section-title font-bold text-white">Featured Web Application Projects</h2>
                 </div>
                 <p class="text-slate-400 text-sm max-w-md">
-                    Browser-based industrial control simulators translating 10+ years of field electrical & PLC troubleshooting into interactive training tools.
+                    Browser-based industrial supervisory runtimes and control simulators translating 10+ years of field electrical, SCADA & PLC troubleshooting into interactive training tools.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
+                <!-- Project Card 0: VANGUARD SCADA Industrial Supervisory Runtime -->
+                <article class="group relative rounded-2xl bg-slate-900/90 border border-slate-800 hover:border-emerald-500/60 p-6 sm:p-8 flex flex-col justify-between transition-all duration-300 emerald-glow">
+                    <div>
+                        <div class="flex flex-wrap items-center justify-between gap-2 pb-4 mb-5 border-b border-slate-800">
+                            <span class="px-2.5 py-1 rounded-md bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-mono text-xs font-semibold">
+                                APP_00 // SCADA RUNTIME
+                            </span>
+                            <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 font-mono text-[11px] font-semibold">
+                                <i data-lucide="sparkles" class="w-3 h-3"></i>
+                                Latest Build • AI Assisted
+                            </span>
+                        </div>
+
+                        <!-- SCADA Telemetry Graphic Preview -->
+                        <div class="mb-6 p-4 rounded-xl bg-slate-950 border border-slate-800/90 font-mono text-xs text-slate-400 overflow-x-auto">
+                            <div class="flex items-center justify-between text-[10px] text-slate-500 mb-2">
+                                <span>HMI // SUPERVISORY</span>
+                                <span>TAGS & ALARMS</span>
+                                <span>ONLINE</span>
+                            </div>
+                            <div class="flex items-center justify-between gap-2 py-2 px-3 border-x-2 border-emerald-500/70 text-emerald-300">
+                                <span>[BUS_416V]</span>
+                                <span>──[ SCADA_RTU ]──</span>
+                                <span>[ALARMS: OK]</span>
+                            </div>
+                        </div>
+
+                        <h3 class="text-xl sm:text-2xl font-bold text-white group-hover:text-emerald-400 transition-colors mb-3">
+                            VANGUARD SCADA Industrial Supervisory Runtime
+                        </h3>
+                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
+                            Browser-based industrial supervisory control and data acquisition runtime modeling live process telemetry, tag monitoring, alarm handling, and supervisory equipment diagnostics.
+                        </p>
+                    </div>
+
+                    <div class="pt-4 border-t border-slate-800/80 flex flex-col gap-4">
+                        <div class="flex flex-wrap gap-2 font-mono text-xs text-slate-400">
+                            <span class="px-2 py-1 rounded bg-slate-950 border border-slate-800">SCADA Runtime</span>
+                            <span class="px-2 py-1 rounded bg-slate-950 border border-slate-800">Telemetry & Tags</span>
+                            <span class="px-2 py-1 rounded bg-slate-950 border border-slate-800">Alarm Diagnostics</span>
+                        </div>
+
+                        <a href="https://jeffry-lacanglacang.github.io/VANGUARD-SCADA-Industrial-Supervisory-Runtime/" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="touch-target w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 active:scale-[0.98] text-slate-950 font-bold text-sm transition-all">
+                            <span>Launch Live SCADA</span>
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </article>
+
                 <!-- Project Card 1: PLC-5000 -->
                 <article class="group relative rounded-2xl bg-slate-900/90 border border-slate-800 hover:border-cyan-500/60 p-6 sm:p-8 flex flex-col justify-between transition-all duration-300 cyan-glow">
                     <div>
@@ -484,7 +539,7 @@
                         </p>
                     </div>
 
-                    <div class="pt-4 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-4">
+                    <div class="pt-4 border-t border-slate-800/80 flex flex-col gap-4">
                         <div class="flex flex-wrap gap-2 font-mono text-xs text-slate-400">
                             <span class="px-2 py-1 rounded bg-slate-950 border border-slate-800">Ladder Logic</span>
                             <span class="px-2 py-1 rounded bg-slate-950 border border-slate-800">Virtual I/O</span>
@@ -494,7 +549,7 @@
                         <a href="https://jeffry-lacanglacang.github.io/PLC-5000-Industrial-Ladder-Logic-Motor-Control-Simulator/" 
                            target="_blank" 
                            rel="noopener noreferrer"
-                           class="touch-target w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 active:scale-[0.98] text-slate-950 font-bold text-sm transition-all">
+                           class="touch-target w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 active:scale-[0.98] text-slate-950 font-bold text-sm transition-all">
                             <span>Launch Live Simulator</span>
                             <i data-lucide="external-link" class="w-4 h-4"></i>
                         </a>
@@ -537,7 +592,7 @@
                         </p>
                     </div>
 
-                    <div class="pt-4 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-4">
+                    <div class="pt-4 border-t border-slate-800/80 flex flex-col gap-4">
                         <div class="flex flex-wrap gap-2 font-mono text-xs text-slate-400">
                             <span class="px-2 py-1 rounded bg-slate-950 border border-slate-800">Wye-Delta</span>
                             <span class="px-2 py-1 rounded bg-slate-950 border border-slate-800">Forward-Reverse</span>
@@ -547,7 +602,7 @@
                         <a href="https://jeffry-lacanglacang.github.io/Motor-Control-Simulator/" 
                            target="_blank" 
                            rel="noopener noreferrer"
-                           class="touch-target w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 active:scale-[0.98] text-slate-950 font-bold text-sm transition-all">
+                           class="touch-target w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 active:scale-[0.98] text-slate-950 font-bold text-sm transition-all">
                             <span>Launch Live Simulator</span>
                             <i data-lucide="external-link" class="w-4 h-4"></i>
                         </a>
@@ -896,7 +951,7 @@
                             </div>
                             <h2 class="fluid-section-title font-bold text-white mb-3">Send a Message</h2>
                             <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
-                                Have an industrial maintenance inquiry, technical role opportunity, or feedback on the PLC and Motor Control simulators? Send a message directly to Jeffry's inbox.
+                                Have an industrial maintenance inquiry, technical role opportunity, or feedback on VANGUARD SCADA, PLC-5000, or Motor Control simulators? Send a message directly to Jeffry's inbox.
                             </p>
                         </div>
 
@@ -948,7 +1003,7 @@
                                     class="w-full min-h-[48px] px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 text-white text-base outline-none transition-colors">
                                     <option value="Job Opportunity">Job Opportunity / Recruitment</option>
                                     <option value="Industrial Maintenance / Consulting">Industrial Maintenance / Electrical Consulting</option>
-                                    <option value="Web Simulator Feedback">Web Simulator Feedback (PLC-5000 / Motor Control)</option>
+                                    <option value="Web Simulator Feedback">Web Simulator Feedback (VANGUARD SCADA / PLC-5000 / Motor Control)</option>
                                     <option value="General Inquiry">Other / General Inquiry</option>
                                 </select>
                             </div>
@@ -1047,7 +1102,7 @@
                 Highly experienced Industrial Electrician with over 10 years of hands-on experience in installation, maintenance, troubleshooting, and repair of industrial and commercial electrical systems. Proven ability to interpret electrical schematics, design motor control circuits, calibrate instrumentation, and implement preventive maintenance programs that reduce downtime and improve system reliability.
             </p>
             <p style="margin: 0; font-size: 8.7pt; color: #1e293b;">
-                Recently expanded into AI-assisted web application development, building interactive browser-based simulators—including a PLC-5000 industrial ladder logic simulator and a motor control circuit simulator—that translate field electrical and control troubleshooting expertise into practical training tools.
+                Recently expanded into AI-assisted web application development, building interactive browser-based simulators and supervisory runtimes—including VANGUARD SCADA Industrial Supervisory Runtime, a PLC-5000 industrial ladder logic simulator, and a motor control circuit simulator—that translate field electrical, telemetry, and control troubleshooting expertise into practical training tools.
             </p>
         </section>
 
@@ -1078,6 +1133,7 @@
         <section class="resume-section">
             <h2 class="resume-section-heading">Featured Web Application Projects (AI-Assisted Development)</h2>
             <ul class="resume-bullets">
+                <li><strong>VANGUARD SCADA Industrial Supervisory Runtime</strong> (<span style="color:#334155;">jeffry-lacanglacang.github.io/VANGUARD-SCADA-Industrial-Supervisory-Runtime/</span>) — Browser-based industrial supervisory control and data acquisition runtime modeling live process telemetry, tag monitoring, alarm handling, and supervisory equipment diagnostics.</li>
                 <li><strong>PLC-5000 Industrial Ladder Logic Motor Control Simulator</strong> (<span style="color:#334155;">jeffry-lacanglacang.github.io/PLC-5000-Industrial-Ladder-Logic-Motor-Control-Simulator/</span>) — Interactive ladder logic programming and motor control simulation tool featuring live rung execution, virtual I/O, timers, counters, and industrial motor starter logic.</li>
                 <li><strong>Motor Control Simulator</strong> (<span style="color:#334155;">jeffry-lacanglacang.github.io/Motor-Control-Simulator/</span>) — Browser-based industrial motor control circuit simulator modeling magnetic contactors, overload relays, start/stop stations, forward-reverse, and wye-delta motor control wiring and fault troubleshooting.</li>
             </ul>
@@ -1346,4 +1402,4 @@
         });
     </script>
 </body>
-        </html>
+</html>

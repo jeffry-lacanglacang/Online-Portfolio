@@ -401,10 +401,10 @@
                     <!-- Summary Paragraph -->
                     <div class="text-slate-300 text-base sm:text-lg leading-relaxed mb-8 border-l-2 border-amber-500/70 pl-4 space-y-4">
                         <p>
-                            Highly experienced Industrial Electrician with over 10 years of hands-on experience in installation, maintenance, troubleshooting, and repair of industrial and commercial electrical systems. Proven ability to interpret electrical schematics, design motor control circuits, calibrate instrumentation, and implement preventive maintenance programs that reduce downtime and improve system reliability.
+                            Results-driven Electrical and Instrumentation Technician with 10+ years of hands-on experience maintaining, troubleshooting, and commissioning industrial and commercial electrical systems. Proven track record in diagnosing complex motor control, overhead crane, VFD, and instrumentation faults to minimize unplanned downtime and maintain strict LOTO safety compliance.
                         </p>
                         <p>
-                            Recently expanded into AI-assisted web application development, building interactive browser-based simulators—including a PLC-5000 industrial ladder logic simulator and a motor control circuit simulator—that translate field electrical and control troubleshooting expertise into practical training tools.
+                            Combines deep field maintenance expertise with AI-assisted web development, building interactive browser-based PLC ladder logic and motor control simulators that model real-world control circuits and fault-finding scenarios.
                         </p>
                     </div>
 
@@ -490,19 +490,25 @@
                         <h3 class="text-xl sm:text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors mb-3">
                             PLC-5000 Industrial Ladder Logic Motor Control Simulator
                         </h3>
-                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-3">
-                            Interactive ladder logic programming and motor control simulation tool featuring live rung execution, virtual I/O, timers, counters, and industrial motor starter logic.
+                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
+                            Browser-based industrial PLC training and logic-testing simulator modeled after Studio 5000 ladder environments. Built to bridge the gap between textbook relay logic and real-world troubleshooting, enabling technicians and students to inspect live rung power flow, toggle virtual field inputs, and verify timing and interlocking behavior without physical PLC hardware.
                         </p>
-                        <p class="text-xs font-mono text-cyan-300/90 mb-6">
-                            Focus: Seal-in rungs, interlocking logic, timers/counters & I/O state testing.
-                        </p>
+                        <div class="mb-6 p-3.5 rounded-xl bg-slate-950/80 border border-slate-800/90 space-y-2">
+                            <span class="block font-mono text-[11px] uppercase tracking-wider text-cyan-400 font-semibold">Key Test Scenarios</span>
+                            <ul class="space-y-1.5 text-xs sm:text-sm text-slate-300 list-disc pl-4 marker:text-cyan-400">
+                                <li><strong class="text-white">Live Rung Execution &amp; Seal-In Logic:</strong> Trace real-time power flow across XIC/XIO contacts, latching seal-in branches, and output coils (<code class="font-mono text-cyan-300">OTE</code>).</li>
+                                <li><strong class="text-white">Star-Delta Starter Sequencing:</strong> Test automated transition timing (<code class="font-mono text-cyan-300">TON</code>) and electrical/software interlocking between Main, Star, and Delta outputs.</li>
+                                <li><strong class="text-white">Virtual I/O &amp; Fault Testing:</strong> Force pushbuttons, overload trip contacts, and emergency stop inputs to observe how safety interlocks drop out active rungs.</li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="pt-4 border-t border-slate-800/80 flex flex-col gap-4">
                         <div class="flex flex-wrap gap-2 font-mono text-xs text-slate-400">
-                            <span class="px-2 py-1 rounded bg-slate-950 border border-slate-800">Ladder Logic</span>
+                            <span class="px-2 py-1 rounded bg-slate-950 border border-slate-800">Studio 5000 Logic</span>
                             <span class="px-2 py-1 rounded bg-slate-950 border border-slate-800">Virtual I/O</span>
-                            <span class="px-2 py-1 rounded bg-slate-950 border border-slate-800">Timers & Counters</span>
+                            <span class="px-2 py-1 rounded bg-slate-950 border border-slate-800">Timers &amp; Counters</span>
+                            <span class="px-2 py-1 rounded bg-slate-950 border border-slate-800">Interlocking</span>
                         </div>
 
                         <a href="https://jeffry-lacanglacang.github.io/PLC-5000-Industrial-Ladder-Logic-Motor-Control-Simulator/"
@@ -551,19 +557,25 @@
                         <h3 class="text-xl sm:text-2xl font-bold text-white group-hover:text-amber-400 transition-colors mb-3">
                             Motor Control Simulator
                         </h3>
-                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-3">
-                            Browser-based industrial motor control circuit simulator modeling magnetic contactors, overload relays, start/stop stations, forward-reverse, and wye-delta motor control wiring and fault troubleshooting.
+                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
+                            Interactive IEC 60617 schematic and control-circuit simulator modeling three-phase motor starter topologies. Designed from field maintenance experience, it visualizes how control transformers, pushbuttons, auxiliary contacts, and thermal overload relays interact during normal startup, direction reversal, and live fault conditions.
                         </p>
-                        <p class="text-xs font-mono text-amber-300/90 mb-6">
-                            Focus: DOL, forward-reverse & wye-delta starters, OL trip & coil faults.
-                        </p>
+                        <div class="mb-6 p-3.5 rounded-xl bg-slate-950/80 border border-slate-800/90 space-y-2">
+                            <span class="block font-mono text-[11px] uppercase tracking-wider text-amber-400 font-semibold">Key Test Scenarios</span>
+                            <ul class="space-y-1.5 text-xs sm:text-sm text-slate-300 list-disc pl-4 marker:text-amber-400">
+                                <li><strong class="text-white">Starter Topologies:</strong> Switch between Direct-On-Line (DOL), Forward-Reverse interlocking, and Wye-Delta reduced-voltage starter circuits.</li>
+                                <li><strong class="text-white">Contactor &amp; Auxiliary State Tracing:</strong> Observe real-time energization of <code class="font-mono text-amber-300">KM1</code>/<code class="font-mono text-amber-300">KM2</code>/<code class="font-mono text-amber-300">KM3</code> coils, holding contacts, and mechanical/electrical interlocks.</li>
+                                <li><strong class="text-white">Simulated Fault Troubleshooting:</strong> Inject thermal overload (<code class="font-mono text-amber-300">OL</code>) trips, open control fuses, or coil failures to practice systematic circuit isolation.</li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="pt-4 border-t border-slate-800/80 flex flex-col gap-4">
                         <div class="flex flex-wrap gap-2 font-mono text-xs text-slate-400">
+                            <span class="px-2 py-1 rounded bg-slate-950 border border-slate-800">IEC 60617</span>
                             <span class="px-2 py-1 rounded bg-slate-950 border border-slate-800">Wye-Delta</span>
                             <span class="px-2 py-1 rounded bg-slate-950 border border-slate-800">Forward-Reverse</span>
-                            <span class="px-2 py-1 rounded bg-slate-950 border border-slate-800">Contactors & Relays</span>
+                            <span class="px-2 py-1 rounded bg-slate-950 border border-slate-800">Fault Diagnostics</span>
                         </div>
 
                         <a href="https://jeffry-lacanglacang.github.io/Motor-Control-Simulator/"
@@ -592,16 +604,16 @@
                 <!-- Interactive Filter Tabs -->
                 <div class="flex flex-wrap gap-2" role="tablist" aria-label="Skill Categories">
                     <button onclick="filterSkills('all')" data-filter="all" class="skill-tab active touch-target px-4 py-2.5 rounded-xl text-xs font-mono font-semibold bg-amber-500 text-slate-950 active:scale-[0.98] transition-all cursor-pointer">
-                        ALL (14)
+                        ALL (16)
                     </button>
                     <button onclick="filterSkills('power')" data-filter="power" class="skill-tab touch-target px-4 py-2.5 rounded-xl text-xs font-mono font-semibold bg-slate-900 text-slate-300 border border-slate-800 hover:border-amber-500/50 active:scale-[0.98] transition-all cursor-pointer">
-                        INDUSTRIAL & POWER
+                        INDUSTRIAL &amp; POWER
                     </button>
                     <button onclick="filterSkills('instrumentation')" data-filter="instrumentation" class="skill-tab touch-target px-4 py-2.5 rounded-xl text-xs font-mono font-semibold bg-slate-900 text-slate-300 border border-slate-800 hover:border-cyan-500/50 active:scale-[0.98] transition-all cursor-pointer">
-                        CONTROLS & INSTRUMENTATION
+                        CONTROLS &amp; INSTRUMENTATION
                     </button>
                     <button onclick="filterSkills('it')" data-filter="it" class="skill-tab touch-target px-4 py-2.5 rounded-xl text-xs font-mono font-semibold bg-slate-900 text-slate-300 border border-slate-800 hover:border-emerald-500/50 active:scale-[0.98] transition-all cursor-pointer">
-                        SAFETY, SYSTEMS & AI ASSISTED DEVELOPMENT
+                        SAFETY, SYSTEMS &amp; AI DEV
                     </button>
                 </div>
             </div>
@@ -615,26 +627,30 @@
                             <i data-lucide="zap" class="w-5 h-5"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-white text-base">Industrial & Power</h3>
-                            <span class="font-mono text-xs text-amber-400">HIGH / LOW VOLTAGE SYSTEMS</span>
+                            <h3 class="font-bold text-white text-base">Industrial &amp; Power Systems</h3>
+                            <span class="font-mono text-xs text-amber-400">HIGH / LOW VOLTAGE &amp; HEAVY MACHINERY</span>
                         </div>
                     </div>
                     <div class="flex flex-col gap-2.5">
                         <div class="p-3 rounded-xl bg-slate-950/90 border border-slate-800/80 flex items-start gap-2.5">
                             <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
-                            <span class="text-sm text-slate-200">Transformer, Panel Board & Circuit Breaker Installation</span>
+                            <span class="text-sm text-slate-200">Transformer, Panel Board &amp; Circuit Breaker Installation</span>
                         </div>
                         <div class="p-3 rounded-xl bg-slate-950/90 border border-slate-800/80 flex items-start gap-2.5">
                             <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
-                            <span class="text-sm text-slate-200">Overhead Crane Electrical Maintenance</span>
+                            <span class="text-sm text-slate-200">Overhead Crane Electrical &amp; Control Maintenance</span>
                         </div>
                         <div class="p-3 rounded-xl bg-slate-950/90 border border-slate-800/80 flex items-start gap-2.5">
                             <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
-                            <span class="text-sm text-slate-200">Industrial Machine Motor Repair</span>
+                            <span class="text-sm text-slate-200">Three-Phase Motor &amp; Starter Repair</span>
                         </div>
                         <div class="p-3 rounded-xl bg-slate-950/90 border border-slate-800/80 flex items-start gap-2.5">
                             <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
-                            <span class="text-sm text-slate-200">Cable Pulling & Wiring Installation</span>
+                            <span class="text-sm text-slate-200">Heavy Workshop Machinery Maintenance</span>
+                        </div>
+                        <div class="p-3 rounded-xl bg-slate-950/90 border border-slate-800/80 flex items-start gap-2.5">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
+                            <span class="text-sm text-slate-200">Industrial Cable Pulling &amp; Termination</span>
                         </div>
                     </div>
                 </div>
@@ -646,65 +662,69 @@
                             <i data-lucide="gauge" class="w-5 h-5"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-white text-base">Controls & Instrumentation</h3>
-                            <span class="font-mono text-xs text-cyan-400">AUTOMATION & CALIBRATION</span>
+                            <h3 class="font-bold text-white text-base">Controls &amp; Instrumentation</h3>
+                            <span class="font-mono text-xs text-cyan-400">AUTOMATION, CALIBRATION &amp; SCHEMATICS</span>
                         </div>
                     </div>
                     <div class="flex flex-col gap-2.5">
                         <div class="p-3 rounded-xl bg-slate-950/90 border border-slate-800/80 flex items-start gap-2.5">
                             <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
-                            <span class="text-sm text-slate-200">Motor Control Circuit Design & Troubleshooting</span>
+                            <span class="text-sm text-slate-200">Motor Control Circuit Design &amp; Fault Diagnostics</span>
                         </div>
                         <div class="p-3 rounded-xl bg-slate-950/90 border border-slate-800/80 flex items-start gap-2.5">
                             <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
-                            <span class="text-sm text-slate-200">Industrial Instrumentation Installation & Calibration</span>
+                            <span class="text-sm text-slate-200">PLC Ladder Logic Programming &amp; Simulation</span>
                         </div>
                         <div class="p-3 rounded-xl bg-slate-950/90 border border-slate-800/80 flex items-start gap-2.5">
                             <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
-                            <span class="text-sm text-slate-200">Electrical Blueprint & Schematic Reading</span>
+                            <span class="text-sm text-slate-200">Variable Frequency Drive (VFD) Commissioning</span>
                         </div>
                         <div class="p-3 rounded-xl bg-slate-950/90 border border-slate-800/80 flex items-start gap-2.5">
                             <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
-                            <span class="text-sm text-slate-200">Fire Detection & Alarm System (FDAS) Installation & Troubleshooting</span>
+                            <span class="text-sm text-slate-200">Industrial Instrumentation Installation &amp; Calibration</span>
                         </div>
                         <div class="p-3 rounded-xl bg-slate-950/90 border border-slate-800/80 flex items-start gap-2.5">
                             <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
-                            <span class="text-sm text-slate-200">PLC Ladder Logic Programming & Troubleshooting</span>
+                            <span class="text-sm text-slate-200">IEC 60617 &amp; Electrical Schematic Reading</span>
                         </div>
                         <div class="p-3 rounded-xl bg-slate-950/90 border border-slate-800/80 flex items-start gap-2.5">
                             <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
-                            <span class="text-sm text-slate-200">Variable Frequency Drive (VFD) Programming & Commissioning</span>
+                            <span class="text-sm text-slate-200">Fire Detection &amp; Alarm Systems (FDAS)</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Category 3: Safety, Systems & AI Assisted Development -->
+                <!-- Category 3: Safety, Systems & AI Dev -->
                 <div data-category="it" class="skill-card rounded-2xl bg-slate-900/85 border border-slate-800 p-6 flex flex-col">
                     <div class="flex items-center gap-3 mb-5 pb-4 border-b border-slate-800">
                         <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
                             <i data-lucide="cpu" class="w-5 h-5"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-white text-base">Safety, Systems & AI Dev</h3>
-                            <span class="font-mono text-xs text-emerald-400">OPERATIONS & SOFTWARE</span>
+                            <h3 class="font-bold text-white text-base">Safety, Systems &amp; AI Dev</h3>
+                            <span class="font-mono text-xs text-emerald-400">RELIABILITY, COMMS &amp; SOFTWARE</span>
                         </div>
                     </div>
                     <div class="flex flex-col gap-2.5">
                         <div class="p-3 rounded-xl bg-slate-950/90 border border-slate-800/80 flex items-start gap-2.5">
                             <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
-                            <span class="text-sm text-slate-200">Preventive Maintenance Planning</span>
+                            <span class="text-sm text-slate-200">Lockout/Tagout (LOTO) &amp; Electrical Code Compliance</span>
                         </div>
                         <div class="p-3 rounded-xl bg-slate-950/90 border border-slate-800/80 flex items-start gap-2.5">
                             <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
-                            <span class="text-sm text-slate-200">PABX System Troubleshooting</span>
+                            <span class="text-sm text-slate-200">Preventive Maintenance (PM) Execution</span>
                         </div>
                         <div class="p-3 rounded-xl bg-slate-950/90 border border-slate-800/80 flex items-start gap-2.5">
                             <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
-                            <span class="text-sm text-slate-200">Computer Systems Servicing</span>
+                            <span class="text-sm text-slate-200">PABX &amp; Internal Communication Systems</span>
                         </div>
                         <div class="p-3 rounded-xl bg-slate-950/90 border border-slate-800/80 flex items-start gap-2.5">
                             <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
-                            <span class="text-sm text-slate-200">AI-Assisted Software Development</span>
+                            <span class="text-sm text-slate-200">Computer Systems &amp; Network Servicing</span>
+                        </div>
+                        <div class="p-3 rounded-xl bg-slate-950/90 border border-slate-800/80 flex items-start gap-2.5">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                            <span class="text-sm text-slate-200">AI-Assisted Web Simulator Development</span>
                         </div>
                     </div>
                 </div>
@@ -744,23 +764,23 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-slate-300 text-sm sm:text-base">
                             <div class="p-3.5 rounded-xl bg-slate-950/75 border border-slate-800/80 flex items-start gap-3">
                                 <span class="text-amber-500 font-mono font-bold text-xs mt-1">01</span>
-                                <span>Install, program, calibrate, and test industrial electrical control systems from schematics and blueprints.</span>
+                                <span><strong class="text-white">Control Systems &amp; Instrumentation:</strong> Install, program, calibrate, and test industrial electrical control systems from schematics and blueprints, ensuring accurate signal response and reliable equipment operation.</span>
                             </div>
                             <div class="p-3.5 rounded-xl bg-slate-950/75 border border-slate-800/80 flex items-start gap-3">
                                 <span class="text-amber-500 font-mono font-bold text-xs mt-1">02</span>
-                                <span>Diagnose and troubleshoot faults across electrical apparatus and components using precision testing instruments.</span>
+                                <span><strong class="text-white">Rapid Fault Diagnostics:</strong> Troubleshoot and resolve electrical, control, and power faults across plant and workshop apparatus using precision testing instruments, reducing diagnostic turnaround time and preventing recurring breakdowns.</span>
                             </div>
                             <div class="p-3.5 rounded-xl bg-slate-950/75 border border-slate-800/80 flex items-start gap-3">
                                 <span class="text-amber-500 font-mono font-bold text-xs mt-1">03</span>
-                                <span>Design and wire motor control circuits with magnetic contactors, overload relays, limit/pressure switches, timers, and pilot lights.</span>
+                                <span><strong class="text-white">Motor Control Design &amp; Wiring:</strong> Design, assemble, and wire custom motor control panels—integrating magnetic contactors, thermal overload relays, limit/pressure switches, timers, and pilot indicators—for heavy industrial applications.</span>
                             </div>
                             <div class="p-3.5 rounded-xl bg-slate-950/75 border border-slate-800/80 flex items-start gap-3">
                                 <span class="text-amber-500 font-mono font-bold text-xs mt-1">04</span>
-                                <span>Maintain and repair motors, controllers, and wiring systems for overhead cranes.</span>
+                                <span><strong class="text-white">Overhead Crane Reliability:</strong> Execute preventive and corrective maintenance on overhead crane motors, brakes, controllers, and pendant/festoon wiring systems to maintain safe, uninterrupted material handling.</span>
                             </div>
                             <div class="md:col-span-2 p-3.5 rounded-xl bg-slate-950/75 border border-slate-800/80 flex items-start gap-3">
                                 <span class="text-amber-500 font-mono font-bold text-xs mt-1">05</span>
-                                <span>Execute installation, repair, and preventive maintenance on heavy workshop machinery: lathes, hydraulic presses, threading/shearing machines, plate benders, boring mills, welders, and blacksmith power hammers.</span>
+                                <span><strong class="text-white">Heavy Workshop Machinery:</strong> Maintain, repair, and overhaul electrical and control systems for critical fabrication and machining equipment—including lathes, hydraulic presses, boring mills, plate benders, shearing/threading machines, industrial welders, and power hammers—while enforcing strict Lockout/Tagout (LOTO) compliance.</span>
                             </div>
                         </div>
                     </div>
@@ -784,19 +804,19 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-slate-300 text-sm sm:text-base">
                             <div class="p-3.5 rounded-xl bg-slate-950/75 border border-slate-800/80 flex items-start gap-3">
                                 <span class="text-cyan-400 font-mono font-bold text-xs mt-1">01</span>
-                                <span>Repaired and maintained water pump motor controllers, including wye-delta starters, forward-reverse, and start-stop control systems.</span>
+                                <span><strong class="text-white">Pump &amp; Motor Control Systems:</strong> Maintained, repaired, and troubleshot critical water supply pump controllers—including wye-delta starters, forward-reverse circuits, and start-stop stations—ensuring continuous building utility availability.</span>
                             </div>
                             <div class="p-3.5 rounded-xl bg-slate-950/75 border border-slate-800/80 flex items-start gap-3">
                                 <span class="text-cyan-400 font-mono font-bold text-xs mt-1">02</span>
-                                <span>Troubleshot and repaired PABX telephone systems and internal communication lines.</span>
+                                <span><strong class="text-white">Life Safety &amp; FDAS Compliance:</strong> Installed, inspected, and serviced Fire Detection and Alarm Systems (smoke/heat detectors and manual call points) in strict adherence to fire safety and electrical codes.</span>
                             </div>
                             <div class="p-3.5 rounded-xl bg-slate-950/75 border border-slate-800/80 flex items-start gap-3">
                                 <span class="text-cyan-400 font-mono font-bold text-xs mt-1">03</span>
-                                <span>Installed, inspected, and maintained Fire Detection and Alarm Systems (smoke detectors, heat detectors, and manual call points).</span>
+                                <span><strong class="text-white">PABX &amp; Internal Communications:</strong> Diagnosed and repaired PABX telephone exchanges and structured internal communication lines, restoring voice connectivity across hotel operations with minimal disruption.</span>
                             </div>
                             <div class="p-3.5 rounded-xl bg-slate-950/75 border border-slate-800/80 flex items-start gap-3">
                                 <span class="text-cyan-400 font-mono font-bold text-xs mt-1">04</span>
-                                <span>Executed preventive maintenance, fault diagnostics, and code-compliant corrective repairs to ensure uninterrupted hotel operations.</span>
+                                <span><strong class="text-white">Preventive Maintenance Execution:</strong> Carried out scheduled preventive maintenance and root-cause corrective repairs across commercial power distribution and lighting systems to prevent unscheduled outages.</span>
                             </div>
                         </div>
                     </div>
@@ -820,11 +840,15 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-slate-300 text-sm sm:text-base">
                             <div class="p-3.5 rounded-xl bg-slate-950/75 border border-slate-800/80 flex items-start gap-3">
                                 <span class="text-slate-400 font-mono font-bold text-xs mt-1">01</span>
-                                <span>Installed and wired electrical transformers, service panels, circuit breakers, and power generation/utilization equipment.</span>
+                                <span><strong class="text-white">Power Distribution Installation:</strong> Installed, wired, and terminated electrical transformers, main service panels, and circuit breakers for commercial and industrial power generation and utilization systems.</span>
                             </div>
                             <div class="p-3.5 rounded-xl bg-slate-950/75 border border-slate-800/80 flex items-start gap-3">
                                 <span class="text-slate-400 font-mono font-bold text-xs mt-1">02</span>
-                                <span>Planned wiring layouts, performed cable pulling and conductor terminations, and conducted safety/efficiency inspections per electrical codes.</span>
+                                <span><strong class="text-white">Code-Compliant Wiring &amp; Layout:</strong> Planned conduit and cable routing, executed heavy cable pulling and conductor terminations, and verified installations against project blueprints and electrical safety codes.</span>
+                            </div>
+                            <div class="md:col-span-2 p-3.5 rounded-xl bg-slate-950/75 border border-slate-800/80 flex items-start gap-3">
+                                <span class="text-slate-400 font-mono font-bold text-xs mt-1">03</span>
+                                <span><strong class="text-white">System Testing &amp; Commissioning:</strong> Conducted insulation resistance, continuity, and operational load testing prior to energization to verify system safety and efficiency.</span>
                             </div>
                         </div>
                     </div>
@@ -844,19 +868,22 @@
             </div>
 
             <!-- Education Card -->
-            <div class="rounded-2xl bg-gradient-to-r from-slate-900 to-slate-900/70 border border-slate-800 p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div class="rounded-2xl bg-gradient-to-r from-slate-900 to-slate-900/70 border border-slate-800 p-6 sm:p-8 flex flex-col sm:flex-row sm:items-start justify-between gap-4">
                 <div class="flex items-start gap-4">
                     <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 shrink-0">
                         <i data-lucide="graduation-cap" class="w-6 h-6"></i>
                     </div>
                     <div>
                         <span class="font-mono text-xs text-amber-400 uppercase tracking-wider">Higher Education</span>
-                        <h3 class="text-lg sm:text-xl font-bold text-white mt-0.5">Associate in Industrial Technology – Electronics Technology</h3>
-                        <p class="text-slate-300 text-sm sm:text-base mt-1">Cebu Technological University</p>
+                        <h3 class="text-lg sm:text-xl font-bold text-white mt-0.5">Associate in Industrial Technology – Electronics Technology (Undergraduate Coursework)</h3>
+                        <p class="text-slate-300 text-sm sm:text-base mt-1">Cebu Technological University (formerly CSCST)</p>
+                        <p class="text-slate-400 text-xs sm:text-sm mt-2 leading-relaxed max-w-2xl">
+                            Completed technical coursework and laboratory training in industrial electronics, circuit analysis, and electrical systems prior to entering full-time field practice.
+                        </p>
                     </div>
                 </div>
-                <div class="font-mono text-xs sm:text-sm text-slate-300 bg-slate-950 px-4 py-2 rounded-xl border border-slate-800 self-start sm:self-center">
-                    Coursework: 1999 – 2004
+                <div class="font-mono text-xs sm:text-sm text-slate-300 bg-slate-950 px-4 py-2 rounded-xl border border-slate-800 self-start shrink-0">
+                    1999 – 2004
                 </div>
             </div>
 
@@ -864,36 +891,36 @@
             <div>
                 <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
                     <i data-lucide="shield-check" class="w-5 h-5 text-cyan-400"></i>
-                    <span>Licenses, Trainings & Certifications</span>
+                    <span>Licenses, Eligibility &amp; Plant Certifications</span>
                 </h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-amber-500/40 transition-colors">
-                        <span class="inline-block font-mono text-[11px] text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded mb-2">NATIONAL LICENSE</span>
-                        <h4 class="font-bold text-white text-sm">National Certificate 2 (NC II) – Electrical Installation and Maintenance</h4>
+                        <span class="inline-block font-mono text-[11px] text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded mb-2">NATIONAL TRADE LICENSE</span>
+                        <h4 class="font-bold text-white text-sm">National Certificate II (NC II) – Electrical Installation and Maintenance</h4>
                         <p class="text-xs text-slate-400 mt-1.5">Technical Education and Skills Development Authority (TESDA)</p>
                     </div>
 
                     <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-cyan-500/40 transition-colors">
                         <span class="inline-block font-mono text-[11px] text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded mb-2">GOVERNMENT ELIGIBILITY</span>
-                        <h4 class="font-bold text-white text-sm">Civil Service Eligibility – Professional Level</h4>
-                        <p class="text-xs text-slate-400 mt-1.5">Civil Service Commission</p>
+                        <h4 class="font-bold text-white text-sm">Career Service Professional Eligibility (Rating: 89.7%)</h4>
+                        <p class="text-xs text-slate-400 mt-1.5">Civil Service Commission (CSC) — Passed March 2025</p>
                     </div>
 
                     <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-amber-500/40 transition-colors">
-                        <span class="inline-block font-mono text-[11px] text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded mb-2">PLANT SAFETY</span>
-                        <h4 class="font-bold text-white text-sm">Lock Out / Tag Out (LOTO), Basic Life Support & Defensive Driving</h4>
+                        <span class="inline-block font-mono text-[11px] text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded mb-2">PLANT SAFETY &amp; COMPLIANCE</span>
+                        <h4 class="font-bold text-white text-sm">Lockout / Tagout (LOTO), Basic Life Support &amp; Defensive Driving</h4>
                         <p class="text-xs text-slate-400 mt-1.5">Carmen Copper Corporation</p>
                     </div>
 
                     <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-cyan-500/40 transition-colors">
-                        <span class="inline-block font-mono text-[11px] text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded mb-2">PLANT MACHINERY</span>
-                        <h4 class="font-bold text-white text-sm">Conveyor Belt System 101 Seminar</h4>
+                        <span class="inline-block font-mono text-[11px] text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded mb-2">INDUSTRIAL EQUIPMENT</span>
+                        <h4 class="font-bold text-white text-sm">Conveyor Belt System 101 Technical Seminar</h4>
                         <p class="text-xs text-slate-400 mt-1.5">Philippine Belt Manufacturing Corporation (PHILBELT)</p>
                     </div>
 
                     <div class="md:col-span-2 p-4 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-emerald-500/40 transition-colors">
-                        <span class="inline-block font-mono text-[11px] text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded mb-2">IT INFRASTRUCTURE & NETWORKING</span>
-                        <h4 class="font-bold text-white text-sm">Installing & Configuring Computer Systems • Setting Up Computer Servers • Setting Up Computer Networks</h4>
+                        <span class="inline-block font-mono text-[11px] text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded mb-2">IT INFRASTRUCTURE &amp; NETWORKING</span>
+                        <h4 class="font-bold text-white text-sm">Computer Systems Servicing, Server Setup &amp; Network Configuration</h4>
                         <p class="text-xs text-slate-400 mt-1.5">TESDA Online Program</p>
                     </div>
                 </div>
@@ -1064,10 +1091,10 @@
         <section class="resume-section">
             <h2 class="resume-section-heading">Summary</h2>
             <p style="margin: 0 0 4px 0; font-size: 8.7pt; color: #1e293b;">
-                Highly experienced Industrial Electrician with over 10 years of hands-on experience in installation, maintenance, troubleshooting, and repair of industrial and commercial electrical systems. Proven ability to interpret electrical schematics, design motor control circuits, calibrate instrumentation, and implement preventive maintenance programs that reduce downtime and improve system reliability.
+                Results-driven Electrical and Instrumentation Technician with 10+ years of hands-on experience maintaining, troubleshooting, and commissioning industrial and commercial electrical systems. Proven track record in diagnosing complex motor control, overhead crane, VFD, and instrumentation faults to minimize unplanned downtime and maintain strict LOTO safety compliance.
             </p>
             <p style="margin: 0; font-size: 8.7pt; color: #1e293b;">
-                Recently expanded into AI-assisted web application development, building interactive browser-based simulators—including a PLC-5000 industrial ladder logic simulator and a motor control circuit simulator—that translate field electrical and control troubleshooting expertise into practical training tools.
+                Combines deep field maintenance expertise with AI-assisted web development, building interactive browser-based PLC ladder logic and motor control simulators that model real-world control circuits and fault-finding scenarios.
             </p>
         </section>
 
@@ -1075,21 +1102,22 @@
         <section class="resume-section">
             <h2 class="resume-section-heading">Core Technical Skills</h2>
             <ul class="resume-skills-grid">
-                <li>PLC Ladder Logic Programming & Troubleshooting</li>
-                <li>Variable Frequency Drive (VFD) Programming & Commissioning</li>
-                <li>Motor Control Circuit Design & Troubleshooting</li>
-                <li>Industrial Instrumentation Installation & Calibration</li>
-                <li>Electrical Blueprint & Schematic Reading</li>
-                <li>Transformer, Panel Board & Circuit Breaker Installation</li>
-                <li>Overhead Crane Electrical Maintenance</li>
-                <li>Industrial Machine Motor Repair</li>
-                <li>Cable Pulling & Wiring Installation</li>
-                <li>Fire Detection & Alarm System (FDAS) Installation & Troubleshooting</li>
-                <li>Preventive Maintenance Planning</li>
-                <li>PABX System Troubleshooting</li>
-                <li>Computer Systems Servicing</li>
-                <li>AI-Assisted Software Development</li>
-                <li>Good Communication Skills</li>
+                <li>Motor Control Circuit Design &amp; Fault Diagnostics</li>
+                <li>PLC Ladder Logic Programming &amp; Simulation</li>
+                <li>Variable Frequency Drive (VFD) Commissioning</li>
+                <li>Industrial Instrumentation Installation &amp; Calibration</li>
+                <li>IEC 60617 &amp; Electrical Schematic Reading</li>
+                <li>Fire Detection &amp; Alarm Systems (FDAS)</li>
+                <li>Transformer, Panel Board &amp; Circuit Breaker Installation</li>
+                <li>Overhead Crane Electrical &amp; Control Maintenance</li>
+                <li>Three-Phase Motor &amp; Starter Repair</li>
+                <li>Heavy Workshop Machinery Maintenance</li>
+                <li>Industrial Cable Pulling &amp; Termination</li>
+                <li>Lockout/Tagout (LOTO) &amp; Electrical Code Compliance</li>
+                <li>Preventive Maintenance (PM) Execution</li>
+                <li>PABX &amp; Internal Communication Systems</li>
+                <li>Computer Systems &amp; Network Servicing</li>
+                <li>AI-Assisted Web Simulator Development</li>
             </ul>
         </section>
 
@@ -1097,8 +1125,8 @@
         <section class="resume-section">
             <h2 class="resume-section-heading">Featured Web Application Projects (AI-Assisted Development)</h2>
             <ul class="resume-bullets">
-                <li><strong>PLC-5000 Industrial Ladder Logic Motor Control Simulator</strong> (<span style="color:#334155;">jeffry-lacanglacang.github.io/PLC-5000-Industrial-Ladder-Logic-Motor-Control-Simulator/</span>) — Interactive ladder logic programming and motor control simulation tool featuring live rung execution, virtual I/O, timers, counters, and industrial motor starter logic.</li>
-                <li><strong>Motor Control Simulator</strong> (<span style="color:#334155;">jeffry-lacanglacang.github.io/Motor-Control-Simulator/</span>) — Browser-based industrial motor control circuit simulator modeling magnetic contactors, overload relays, start/stop stations, forward-reverse, and wye-delta motor control wiring and fault troubleshooting.</li>
+                <li><strong>PLC-5000 Industrial Ladder Logic Motor Control Simulator</strong> (<span style="color:#334155;">jeffry-lacanglacang.github.io/PLC-5000-Industrial-Ladder-Logic-Motor-Control-Simulator/</span>) — Browser-based industrial PLC training and logic-testing simulator modeled after Studio 5000 ladder environments, featuring live rung power flow (XIC/XIO/OTE), Star-Delta transition timing (TON), interlocking, and virtual I/O fault testing.</li>
+                <li><strong>Motor Control Simulator</strong> (<span style="color:#334155;">jeffry-lacanglacang.github.io/Motor-Control-Simulator/</span>) — Interactive IEC 60617 schematic and control-circuit simulator modeling DOL, Forward-Reverse, and Wye-Delta motor starters, real-time contactor/auxiliary state tracing (KM1–KM3), and simulated OL trip, fuse, and coil fault troubleshooting.</li>
             </ul>
         </section>
 
@@ -1112,16 +1140,14 @@
                     <div>
                         <span class="resume-job-company">Carmen Copper Corporation</span> — <span class="resume-job-role">Maintenance Technician</span>
                     </div>
-                    <span class="resume-job-date">September, 2021 – Present</span>
+                    <span class="resume-job-date">September 2021 – Present</span>
                 </div>
                 <ul class="resume-bullets">
-                    <li>Install, program, and calibrate electrical control systems for various industrial applications.</li>
-                    <li>Read and interpret electrical and electronic blueprints, schematics, and diagrams.</li>
-                    <li>Assemble, install, test, and maintain electrical systems using appropriate hand and power tools.</li>
-                    <li>Diagnose and troubleshoot faults in electrical systems, apparatus, and components using testing instruments.</li>
-                    <li>Design and execute motor control circuits including magnetic contactors, overload relays, limit switches, timed relays, pressure switches, and pilot lights.</li>
-                    <li>Perform repair and maintenance of motors, controllers, and wiring systems for overhead cranes.</li>
-                    <li>Conduct installation, repair, and preventive maintenance of industrial machines such as lathe machines, hydraulic press, threading machine, shearing machine, plate benders, boring mills, welding machines, and blacksmith power hammer.</li>
+                    <li><strong>Control Systems &amp; Instrumentation:</strong> Install, program, calibrate, and test industrial electrical control systems from schematics and blueprints, ensuring accurate signal response and reliable equipment operation.</li>
+                    <li><strong>Rapid Fault Diagnostics:</strong> Troubleshoot and resolve electrical, control, and power faults across plant and workshop apparatus using precision testing instruments, reducing diagnostic turnaround time and preventing recurring breakdowns.</li>
+                    <li><strong>Motor Control Design &amp; Wiring:</strong> Design, assemble, and wire custom motor control panels—integrating magnetic contactors, thermal overload relays, limit/pressure switches, timers, and pilot indicators—for heavy industrial applications.</li>
+                    <li><strong>Overhead Crane Reliability:</strong> Execute preventive and corrective maintenance on overhead crane motors, brakes, controllers, and pendant/festoon wiring systems to maintain safe, uninterrupted material handling.</li>
+                    <li><strong>Heavy Workshop Machinery:</strong> Maintain, repair, and overhaul electrical and control systems for critical fabrication and machining equipment—including lathes, hydraulic presses, boring mills, plate benders, shearing/threading machines, industrial welders, and power hammers—while enforcing strict Lockout/Tagout (LOTO) compliance.</li>
                 </ul>
             </div>
 
@@ -1131,15 +1157,13 @@
                     <div>
                         <span class="resume-job-company">Sarrosa International Hotel and Residential Suites</span> — <span class="resume-job-role">Electrician</span>
                     </div>
-                    <span class="resume-job-date">February, 2018 – December, 2020</span>
+                    <span class="resume-job-date">February 2018 – December 2020</span>
                 </div>
                 <ul class="resume-bullets">
-                    <li>Performed repair and maintenance of water pump motor controllers including wye-delta starters, forward-reverse, and start-stop control systems.</li>
-                    <li>Troubleshot and repaired PABX telephone systems and internal communication lines.</li>
-                    <li>Installed, inspected, and maintained Fire Detection and Alarm Systems including smoke detectors, heat detectors, and manual call points.</li>
-                    <li>Conducted preventive maintenance to ensure continuous operation of hotel electrical facilities.</li>
-                    <li>Diagnosed electrical faults and implemented corrective actions to minimize system downtime.</li>
-                    <li>Ensured compliance with safety standards and electrical codes in all maintenance activities.</li>
+                    <li><strong>Pump &amp; Motor Control Systems:</strong> Maintained, repaired, and troubleshot critical water supply pump controllers—including wye-delta starters, forward-reverse circuits, and start-stop stations—ensuring continuous building utility availability.</li>
+                    <li><strong>Life Safety &amp; FDAS Compliance:</strong> Installed, inspected, and serviced Fire Detection and Alarm Systems (smoke/heat detectors and manual call points) in strict adherence to fire safety and electrical codes.</li>
+                    <li><strong>PABX &amp; Internal Communications:</strong> Diagnosed and repaired PABX telephone exchanges and structured internal communication lines, restoring voice connectivity across hotel operations with minimal disruption.</li>
+                    <li><strong>Preventive Maintenance Execution:</strong> Carried out scheduled preventive maintenance and root-cause corrective repairs across commercial power distribution and lighting systems to prevent unscheduled outages.</li>
                 </ul>
             </div>
 
@@ -1149,14 +1173,12 @@
                     <div>
                         <span class="resume-job-company">Guam Advanced Systems Inc.</span> — <span class="resume-job-role">Electrician</span>
                     </div>
-                    <span class="resume-job-date">July, 2016 – August, 2017</span>
+                    <span class="resume-job-date">July 2016 – August 2017</span>
                 </div>
                 <ul class="resume-bullets">
-                    <li>Installed and wired electrical transformers, service panels, and circuit breakers.</li>
-                    <li>Installed, maintained, repaired, and tested electrical equipment for power generation and utilization.</li>
-                    <li>Planned layout and installation of electrical wiring, fixtures, and equipment according to specifications and applicable codes.</li>
-                    <li>Performed cable pulling and proper termination of electrical conductors.</li>
-                    <li>Conducted system testing and inspection to ensure operational efficiency and safety compliance.</li>
+                    <li><strong>Power Distribution Installation:</strong> Installed, wired, and terminated electrical transformers, main service panels, and circuit breakers for commercial and industrial power generation and utilization systems.</li>
+                    <li><strong>Code-Compliant Wiring &amp; Layout:</strong> Planned conduit and cable routing, executed heavy cable pulling and conductor terminations, and verified installations against project blueprints and electrical safety codes.</li>
+                    <li><strong>System Testing &amp; Commissioning:</strong> Conducted insulation resistance, continuity, and operational load testing prior to energization to verify system safety and efficiency.</li>
                 </ul>
             </div>
         </section>
@@ -1166,9 +1188,9 @@
             <div>
                 <h2 class="resume-section-heading">Education</h2>
                 <div style="font-size: 8.8pt;">
-                    <div style="font-weight: 700; color: #0f172a;">Associate in Industrial Technology – Electronics Technology</div>
-                    <div style="color: #1e293b;">Cebu Technological University</div>
-                    <div style="font-size: 8.3pt; color: #475569;">Coursework: 1999 – 2004</div>
+                    <div style="font-weight: 700; color: #0f172a;">Associate in Industrial Technology – Electronics Technology (Undergraduate Coursework)</div>
+                    <div style="color: #1e293b;">Cebu Technological University (formerly CSCST) | 1999 – 2004</div>
+                    <div style="font-size: 8.2pt; color: #475569;">Completed technical coursework and laboratory training in industrial electronics, circuit analysis, and electrical systems prior to entering full-time field practice.</div>
                 </div>
             </div>
             <div>
@@ -1181,17 +1203,13 @@
 
         <!-- Trainings & Certifications -->
         <section class="resume-section">
-            <h2 class="resume-section-heading">Trainings & Certifications</h2>
+            <h2 class="resume-section-heading">Trainings &amp; Certifications</h2>
             <ul class="resume-cert-list">
-                <li><strong>National Certificate 2 (NC II) – Electrical Installation and Maintenance</strong> — Technical Education and Skills Development Authority (TESDA)</li>
-                <li><strong>Civil Service Eligibility – Professional Level</strong> — Civil Service Commission</li>
-                <li><strong>Defensive Driving Certification</strong> — Carmen Copper Corporation</li>
-                <li><strong>Basic Life Support Training</strong> — Carmen Copper Corporation</li>
-                <li><strong>Lock Out / Tag Out (LOTO) Training</strong> — Carmen Copper Corporation</li>
-                <li><strong>Conveyor Belt System 101 Seminar</strong> — Philippine Belt Manufacturing Corporation (PHILBELT)</li>
-                <li><strong>Installing and Configuring Computer Systems</strong> — Technical Education and Skills Development Authority (TESDA Online Program)</li>
-                <li><strong>Setting Up Computer Servers</strong> — Technical Education and Skills Development Authority (TESDA Online Program)</li>
-                <li><strong>Setting Up Computer Networks</strong> — Technical Education and Skills Development Authority (TESDA Online Program)</li>
+                <li><strong>National Certificate II (NC II) – Electrical Installation and Maintenance</strong> — Technical Education and Skills Development Authority (TESDA)</li>
+                <li><strong>Career Service Professional Eligibility (Rating: 89.7%)</strong> — Civil Service Commission (CSC) — Passed March 2025</li>
+                <li><strong>Lockout / Tagout (LOTO), Basic Life Support &amp; Defensive Driving</strong> — Carmen Copper Corporation</li>
+                <li><strong>Conveyor Belt System 101 Technical Seminar</strong> — Philippine Belt Manufacturing Corporation (PHILBELT)</li>
+                <li><strong>Computer Systems Servicing, Server Setup &amp; Network Configuration</strong> — TESDA Online Program</li>
             </ul>
         </section>
 
